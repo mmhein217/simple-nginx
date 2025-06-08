@@ -8,6 +8,6 @@ spec:
   type: ClusterIP  # Internal service (default)
   ports:
   - port: 80       # Service port
-    targetPort: 80 # Pod port (matches containerPort in deployment)
+    targetPort: 8080 # Pod port (matches containerPort in deployment)
   selector:
     app: my-app    # Matches deployment's pod labels
